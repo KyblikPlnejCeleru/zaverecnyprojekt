@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class Mistnost {
     private String nazev;
     private String popis;
-    private ArrayList<Mistnost> vychody;
+    private ArrayList<Mistnost> vstupy;
     private ArrayList<Predmet> predmety;
     private ArrayList<Postava> postavy;
 

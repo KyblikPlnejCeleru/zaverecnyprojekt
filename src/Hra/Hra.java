@@ -4,7 +4,6 @@ import mechanika.Hrac;
 import mechanika.Mistnost;
 
 public class Hra {
-    private Mistnost aktualniMistnost;
     private Hrac hrac;
     private boolean konec;
 

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 public class Hrac {
     private ArrayList<Predmet> inventar;
     private int penize;
+    private Mistnost aktualniMistnost;
 
     public Hrac() {
         // TODO
