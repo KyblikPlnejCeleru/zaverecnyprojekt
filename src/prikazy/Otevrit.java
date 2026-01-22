@@ -4,12 +4,12 @@ public class Otevrit implements Prikaz {
 
 
     @Override
-    public String execute(String vstup) {
+    public String konej(String vstup) {
         return "";
     }
 
     @Override
-    public boolean exit() {
+    public boolean ukonceni() {
         return false;//TODO
     }
 }

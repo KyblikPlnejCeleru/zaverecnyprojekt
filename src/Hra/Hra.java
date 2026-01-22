@@ -7,7 +7,10 @@ public class Hra {
     private Hrac hrac;
     private boolean konec;
 
-    //Nacte game data hrace a spusti hru
+
+    /**
+     * Spusti hru a vyporada se se smyckou
+     */
     public void spusti() {
         GameData data = GameData.loadGameDataFromResources("res/GameData.json");
         Konzole k = new Konzole();
@@ -17,6 +20,7 @@ public class Hra {
         do {
             k.execute();
         }while (!konec);
+        // TODO dodelat konec smycky
     }
 
     private void vytvorSvet() {

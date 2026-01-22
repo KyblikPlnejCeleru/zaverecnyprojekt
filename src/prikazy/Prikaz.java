@@ -1,7 +1,10 @@
 package prikazy;
 
+/**
+ * interface pro tridy prikaz
+ */
 public interface Prikaz {
-    String execute(String vstup);
+    String konej(String vstup);
 
-    boolean exit();
+    boolean ukonceni();
 }

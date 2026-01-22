@@ -10,8 +10,11 @@ public class Jdi implements Prikaz {
 
     @Override
 
-
-    public String execute(String vstup) {
+/**
+ * prochazeni mezi mistnostma
+ * @param vstup nazev mistnosti kam ten uzivatel chce jit
+ */
+    public String konej(String vstup) {
         for (int i = 0; i < hra.getLocations().size(); i++) {
             if (hra.getLocations().get(i).getNazev().contains(vstup.toLowerCase().trim())) {
                 if (hrac.getAktualniMistnost().getVstupy().contains(hra.getLocations().get(i).getId())) {
@@ -20,7 +23,7 @@ public class Jdi implements Prikaz {
                 }
             }
         }
-        return "";//TODO
+        return "kouzlo";
     }
 
     public Jdi(GameData hra, Hrac hrac) {
@@ -29,7 +32,7 @@ public class Jdi implements Prikaz {
     }
 
     @Override
-    public boolean exit() {
+    public boolean ukonceni() {
         return false;//TODO
     }
 }

@@ -7,6 +7,10 @@ import prikazy.Prikaz;
 import java.util.HashMap;
 import java.util.Scanner;
 
+/**
+ * Trida pro spracovani prikazu
+ */
+
 public class Konzole {
 
     private HashMap<String, Prikaz> prikazy;
@@ -18,17 +22,25 @@ public class Konzole {
         prikazy = new HashMap<>();
     }
 
+    /**
+     * nacte prikazy
+     * @param g GameData data nactene z jsonu
+     * @param h Hrac instance hrace
+     */
     public void inicializatorPrikazu(GameData g, Hrac h) {
         prikazy.put("jdi", new Jdi(g, h));
 
     }
 
+    /**
+     * Vykona zadany prikaz
+     */
     public void execute() {
         System.out.print(" -- ");
         String command = scanner.nextLine();
         String[] pr = command.trim().toLowerCase().split(" ");
         if (prikazy.containsKey(pr[0])) {
-            System.out.println(prikazy.get(pr[0]).execute(pr[1]));
+            System.out.println(prikazy.get(pr[0]).konej(pr[1]));
         }
 
     }
