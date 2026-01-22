@@ -76,5 +76,17 @@ public class Mistnost {
     public void setId(int id) {
         this.id = id;
     }
+
+    @Override
+    public String toString() {
+        return "Mistnost{" +
+                "nazev='" + nazev + '\'' +
+                ", popis='" + popis + '\'' +
+                ", id=" + id +
+                ", vstupy=" + vstupy +
+                ", predmety=" + predmety +
+                ", postavy=" + postavy +
+                '}';
+    }
 }
 

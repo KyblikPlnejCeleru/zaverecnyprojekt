@@ -5,7 +5,7 @@ import prikazy.Jdi;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-//testovaci veci
+//testovaci veci {po spusteni hry napiste jdi {mistnost} mistnosti jsou ulozene v jsonu
         Hra hra = new Hra();
         hra.spusti();
 

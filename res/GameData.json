@@ -4,7 +4,7 @@
       "id": 1,
       "nazev": "chodba",
       "popis": "Dlouha chodba s linoleem a sedymi stenami.",
-      "vstupy": [2, 3, 4, 5, 6, 7, 8],
+      "vstupy": [2, 3, 4, 5, 6, 7, 8,9],
       "predmety": [],
       "postavy": []
     },
@@ -60,6 +60,14 @@
       "id": 8,
       "nazev": "hlavnivchod",
       "popis": "Masivni dvere vedouci ven ze skoly. Jsou zamceny na nekolik zamku.",
+      "vstupy": [1],
+      "predmety": [],
+      "postavy": []
+    },
+    {
+      "id": 9,
+      "nazev": "bufet",
+      "popis": "Nejvic masivne dobrej bufet na svete.",
       "vstupy": [1],
       "predmety": [],
       "postavy": []

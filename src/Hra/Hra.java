@@ -14,7 +14,9 @@ public class Hra {
         Hrac h = new Hrac();
         h.setAktualniMistnost(data.getLocations().getFirst());
         k.inicializatorPrikazu(data, h);
-        k.execute();
+        do {
+            k.execute();
+        }while (!konec);
     }
 
     private void vytvorSvet() {
