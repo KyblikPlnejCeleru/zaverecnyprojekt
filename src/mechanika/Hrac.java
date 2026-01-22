@@ -27,4 +27,8 @@ public class Hrac {
         // TODO
         return false;
     }
+
+    public void setAktualniMistnost(Mistnost aktualniMistnost) {
+        this.aktualniMistnost = aktualniMistnost;
+    }
 }

@@ -4,10 +4,9 @@ public class Seber implements Prikaz {
 
 
     @Override
-    public String execute() {
-        return "";//TODO
+    public String execute(String vstup) {
+        return "";
     }
-
     @Override
     public boolean exit() {
         return false;//TODO

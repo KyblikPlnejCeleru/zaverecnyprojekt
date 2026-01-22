@@ -8,7 +8,8 @@ public class Hra {
     private boolean konec;
 
     public void spusti() {
-        // TODO
+        GameData data = GameData.loadGameDataFromResources("/gamedata.json");
+
     }
 
     private void vytvorSvet() {
