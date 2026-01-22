@@ -1,4 +1,5 @@
 package Hra;
+
 import com.sun.tools.javac.Main;
 import mechanika.Mistnost;
 import mechanika.Postava;
@@ -25,6 +26,7 @@ public class GameData {
 
     /**
      * Loads game data from a JSON file.
+     *
      * @param resourcePath path to the resource file
      * @return a GameData object filled with the loaded data
      */
@@ -49,20 +51,19 @@ public class GameData {
 
     /**
      * Finds a specific location by its identifier.
+     *
      * @param nazev the identifier of the location to be found
      * @return the matching location
      */
-    public  Mistnost findLocation(String nazev) {
+    public Mistnost findLocation(String nazev) {
         for (Mistnost l : mistnosti) {
-            if (l.getNazev().equals(nazev)){
+            if (l.getNazev().equals(nazev)) {
                 return l;
             }
         }
         throw new IllegalArgumentException("Neexistuje lokace jmenem: " + nazev);
     }
-
     public ArrayList<Mistnost> getLocations() {
         return mistnosti;
     }
-
 }

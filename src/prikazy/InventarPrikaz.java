@@ -3,7 +3,6 @@ package prikazy;
 public class InventarPrikaz implements Prikaz {
 
 
-
     @Override
     public String execute(String vstup) {
         return "";
