@@ -9,10 +9,12 @@ public class Jdi implements Prikaz {
     private Hrac hrac;
 
     @Override
+
+
     public String execute(String vstup) {
-        for (int i = 0; i < hra.locations.size(); i++) {
-        if (vstup.contains(hra.locations.get(i).getNazev())){
-         hrac.setAktualniMistnost(hra.locations.get(i));
+        for (int i = 0; i < hra.getLocations().size(); i++) {
+        if (vstup.contains(hra.getLocations().get(i).getNazev())){
+         hrac.setAktualniMistnost(hra.getLocations().get(i));
         }
         }
         return "";//TODO

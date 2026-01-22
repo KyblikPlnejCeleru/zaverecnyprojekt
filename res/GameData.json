@@ -11,7 +11,7 @@
     {
       "id": 2,
       "nazev": "Ucebna IT",
-      "popis": "Mistnost pln� pocitacu. Vzduch je citit prachem a elektrinou.",
+      "popis": "Mistnost plna pocitacu. Vzduch je citit prachem a elektrinou.",
       "vstupy": [1],
       "predmety": [],
       "postavy": []
@@ -43,7 +43,7 @@
     {
       "id": 6,
       "nazev": "Sborovna",
-      "popis": "Klidne m�stnost s pohodlnymi kresly a dlouhym stolem.",
+      "popis": "Klidne mistnost s pohodlnymi kresly a dlouhym stolem.",
       "vstupy": [5],
       "predmety": [],
       "postavy": []

@@ -7,7 +7,7 @@ public class Mistnost {
     private String nazev;
     private String popis;
     private int id;
-    private ArrayList<Mistnost> vstupy;
+    private ArrayList<Integer> vstupy;
     private ArrayList<Predmet> predmety;
     private ArrayList<Postava> postavy;
 
@@ -45,11 +45,11 @@ public class Mistnost {
         this.popis = popis;
     }
 
-    public ArrayList<Mistnost> getVstupy() {
+    public ArrayList<Integer> getVstupy() {
         return vstupy;
     }
 
-    public void setVstupy(ArrayList<Mistnost> vstupy) {
+    public void setVstupy(ArrayList<Integer> vstupy) {
         this.vstupy = vstupy;
     }
 

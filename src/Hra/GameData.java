@@ -5,8 +5,10 @@ import mechanika.Postava;
 import com.google.gson.Gson;
 import mechanika.Predmet;
 
+import java.io.FileReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.Reader;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 
@@ -19,7 +21,7 @@ public class GameData {
 
     public ArrayList<Predmet> Predmety;
     public ArrayList<Postava> postavy;
-    public ArrayList<Mistnost> locations;
+    private ArrayList<Mistnost> mistnosti;
 
     /**
      * Loads game data from a JSON file.
@@ -31,17 +33,11 @@ public class GameData {
         Gson gson = new Gson();
 
         //Načtení souboru gamedata.json, musí být ve složce res/resources, ta musí být označena jako resource složka projektu
-        try (InputStream is = Main.class.getResourceAsStream(resourcePath)) {
-
-            //Zde ověřujeme, zdali soubor existuje
-            if (is == null) {
-                throw new IllegalStateException("Nenalezen resource: " + resourcePath +
-                        " (zkontrolujte, že soubor je v src/main/resources).");
-            }
+        try (Reader rd = new FileReader(resourcePath)) {
 
             //Přečte celý JSON a vytvoří instanci GameData, naplní vlastnosti podle názvů klíčů v JSONU, vrátí se hotová třída GameData
             return gson.fromJson(
-                    new InputStreamReader(is, StandardCharsets.UTF_8),
+                    rd,
                     GameData.class
             );
 
@@ -57,7 +53,7 @@ public class GameData {
      * @return the matching location
      */
     public  Mistnost findLocation(String nazev) {
-        for (Mistnost l : locations) {
+        for (Mistnost l : mistnosti) {
             if (l.getNazev().equals(nazev)){
                 return l;
             }
@@ -66,6 +62,6 @@ public class GameData {
     }
 
     public ArrayList<Mistnost> getLocations() {
-        return locations;
+        return mistnosti;
     }
 }
