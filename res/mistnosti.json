@@ -1,0 +1,68 @@
+{
+  "mistnosti": [
+    {
+      "id": 1,
+      "nazev": "Chodba",
+      "popis": "Dlouha chodba s linoleem a sedymi stenami.",
+      "vstupy": [2, 3, 4, 5, 6, 7, 8],
+      "predmety": [],
+      "postavy": []
+    },
+    {
+      "id": 2,
+      "nazev": "Ucebna IT",
+      "popis": "Mistnost pln� pocitacu. Vzduch je citit prachem a elektrinou.",
+      "vstupy": [1],
+      "predmety": [],
+      "postavy": []
+    },
+    {
+      "id": 3,
+      "nazev": "Ucebna elektro",
+      "popis": "Ucebna plne elektrotechnickych soucastek a mericich pristroju.",
+      "vstupy": [1],
+      "predmety": [],
+      "postavy": []
+    },
+    {
+      "id": 4,
+      "nazev": "Laborator",
+      "popis": "Laborator s chemickymi soupravami a mikroskopy. V rohu stoji umyvadlo.",
+      "vstupy": [1],
+      "predmety": [],
+      "postavy": []
+    },
+    {
+      "id": 5,
+      "nazev": "Kabinet",
+      "popis": "Kabinet ucitelu, preplneni skrinemi s dokumenty.",
+      "vstupy": [1, 6],
+      "predmety": [],
+      "postavy": []
+    },
+    {
+      "id": 6,
+      "nazev": "Sborovna",
+      "popis": "Klidne m�stnost s pohodlnymi kresly a dlouhym stolem.",
+      "vstupy": [5],
+      "predmety": [],
+      "postavy": []
+    },
+    {
+      "id": 7,
+      "nazev": "Satna",
+      "popis": "Satna s radami skr�nek. Na zemi lezi ponozky a boty.",
+      "vstupy": [1],
+      "predmety": [],
+      "postavy": []
+    },
+    {
+      "id": 8,
+      "nazev": "Hlavni vchod",
+      "popis": "Masivni dvere vedouci ven ze skoly. Jsou zamceny na nekolik zamku.",
+      "vstupy": [1],
+      "predmety": [],
+      "postavy": []
+    }
+  ]
+}
