@@ -31,4 +31,8 @@ public class Hrac {
     public void setAktualniMistnost(Mistnost aktualniMistnost) {
         this.aktualniMistnost = aktualniMistnost;
     }
+
+    public Mistnost getAktualniMistnost() {
+        return aktualniMistnost;
+    }
 }

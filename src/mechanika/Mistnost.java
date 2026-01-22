@@ -68,5 +68,13 @@ public class Mistnost {
     public void setPostavy(ArrayList<Postava> postavy) {
         this.postavy = postavy;
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 }
 

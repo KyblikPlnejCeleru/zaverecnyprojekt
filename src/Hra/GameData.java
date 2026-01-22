@@ -64,4 +64,5 @@ public class GameData {
     public ArrayList<Mistnost> getLocations() {
         return mistnosti;
     }
+
 }
