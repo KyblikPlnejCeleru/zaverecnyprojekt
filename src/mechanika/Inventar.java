@@ -1,18 +1,33 @@
 package mechanika;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Objects;
+
 public class Inventar {
-    public boolean pridej(Predmet predmet) {
-        return false;
+   private HashMap<String ,Predmet> predmety;
+
+    public HashMap<String, Predmet> getPredmety() {
+        return predmety;
     }
 
-    public boolean odeber(Predmet predmet) {
-        return false;
+    public void setPredmety(HashMap<String, Predmet> predmety) {
+        this.predmety = predmety;
     }
 
-    public boolean maPredmet(String nazev) {
-        return false;
+    public Inventar(HashMap<String, Predmet> predmety) {
+        this.predmety = new HashMap<>();
     }
 
-    public void vypis() {
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Inventar inventar = (Inventar) o;
+        return Objects.equals(predmety, inventar.predmety);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(predmety);
     }
 }

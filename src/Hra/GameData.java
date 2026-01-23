@@ -12,6 +12,7 @@ import java.io.InputStreamReader;
 import java.io.Reader;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 /**
  * Represents the game data loaded from a JSON file.
@@ -20,7 +21,7 @@ import java.util.ArrayList;
  */
 public class GameData {
 
-    public ArrayList<Predmet> Predmety;
+    public HashMap<String,Predmet> Predmety;
     public ArrayList<Postava> postavy;
     private ArrayList<Mistnost> mistnosti;
 
