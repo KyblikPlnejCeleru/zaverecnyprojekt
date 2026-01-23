@@ -55,4 +55,8 @@ public class Hrac {
     public void setInventar(ArrayList<Predmet> inventar) {
         this.inventar = inventar;
     }
+    public boolean odeberPredmet(Predmet p){
+       return inventar.remove(p);
+
+    }
 }

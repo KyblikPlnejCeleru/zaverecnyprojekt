@@ -2,10 +2,24 @@ package mechanika;
 
 public class Predmet {
     private String nazev;
-    private boolean jdeSebrat;
+    private int id;
+
 
     public String getNazev() {
-        // TODO
-        return "";
+        return nazev;
+    }
+
+
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setNazev(String nazev) {
+        this.nazev = nazev;
     }
 }
