@@ -20,8 +20,7 @@ public class Hrac {
     }
 
     public String vypisInventar() {
-        // TODO
-        return "";
+        return inventar.toString();
     }
 
     public boolean maKartu() {
