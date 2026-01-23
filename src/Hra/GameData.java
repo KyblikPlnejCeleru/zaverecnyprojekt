@@ -21,7 +21,7 @@ import java.util.HashMap;
  */
 public class GameData {
 
-    public HashMap<String,Predmet> Predmety;
+    public ArrayList<Predmet> Predmety;
     public ArrayList<Postava> postavy;
     private ArrayList<Mistnost> mistnosti;
 

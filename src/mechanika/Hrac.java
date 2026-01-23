@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Hrac {
-    private HashMap<String,Predmet> inventar;
+    private ArrayList<Predmet> inventar;
     private int penize;
     private Mistnost aktualniMistnost;
 
@@ -34,13 +34,7 @@ public class Hrac {
         return aktualniMistnost;
     }
 
-    public HashMap<String, Predmet> getInventar() {
-        return inventar;
-    }
 
-    public void setInventar(HashMap<String, Predmet> inventar) {
-        this.inventar = inventar;
-    }
 
     public int getPenize() {
         return penize;
@@ -51,6 +45,6 @@ public class Hrac {
     }
 
     public boolean pridatPredmet(Predmet p){
-        inventar.put(Integer.toString(inventar.size()),p);
+        return inventar.add(p);
     }
 }
