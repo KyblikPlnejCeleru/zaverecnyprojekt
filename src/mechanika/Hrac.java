@@ -1,9 +1,10 @@
 package mechanika;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Hrac {
-    private ArrayList<Predmet> inventar;
+    private HashMap<String,Predmet> inventar;
     private int penize;
     private Mistnost aktualniMistnost;
 
@@ -11,9 +12,6 @@ public class Hrac {
         // TODO
     }
 
-    public void pridejVec(Predmet vec) {
-        // TODO
-    }
 
     public void uberVec(String nazev) {
         // TODO
@@ -36,11 +34,11 @@ public class Hrac {
         return aktualniMistnost;
     }
 
-    public ArrayList<Predmet> getInventar() {
+    public HashMap<String, Predmet> getInventar() {
         return inventar;
     }
 
-    public void setInventar(ArrayList<Predmet> inventar) {
+    public void setInventar(HashMap<String, Predmet> inventar) {
         this.inventar = inventar;
     }
 
@@ -50,5 +48,9 @@ public class Hrac {
 
     public void setPenize(int penize) {
         this.penize = penize;
+    }
+
+    public boolean pridatPredmet(Predmet p){
+        inventar.put(Integer.toString(inventar.size()),p);
     }
 }
