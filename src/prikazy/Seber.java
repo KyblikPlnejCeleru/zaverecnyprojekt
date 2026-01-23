@@ -1,11 +1,21 @@
 package prikazy;
 
+import mechanika.Hrac;
+
 public class Seber implements Prikaz {
 
-
+Hrac h;
     @Override
     public String konej(String vstup) {
-        return "";
+        for (int i = 0; i < h.getAktualniMistnost().getPredmety().size(); i++) {
+            if (h.getAktualniMistnost().getPredmety().get(i).getNazev().contains(vstup)){
+                h.pridatPredmet(h.getAktualniMistnost().getPredmety().get(i));
+            }
+        }
+        return "sebral jsi to";
+    }
+    public Seber(Hrac h) {
+        this.h = h;
     }
 
     @Override
