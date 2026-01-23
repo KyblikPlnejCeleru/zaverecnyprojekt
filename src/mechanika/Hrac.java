@@ -36,4 +36,20 @@ public class Hrac {
     public Mistnost getAktualniMistnost() {
         return aktualniMistnost;
     }
+
+    public ArrayList<Predmet> getInventar() {
+        return inventar;
+    }
+
+    public void setInventar(ArrayList<Predmet> inventar) {
+        this.inventar = inventar;
+    }
+
+    public int getPenize() {
+        return penize;
+    }
+
+    public void setPenize(int penize) {
+        this.penize = penize;
+    }
 }
