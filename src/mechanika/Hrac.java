@@ -47,4 +47,12 @@ public class Hrac {
     public boolean pridatPredmet(Predmet p){
         return inventar.add(p);
     }
+
+    public ArrayList<Predmet> getInventar() {
+        return inventar;
+    }
+
+    public void setInventar(ArrayList<Predmet> inventar) {
+        this.inventar = inventar;
+    }
 }
