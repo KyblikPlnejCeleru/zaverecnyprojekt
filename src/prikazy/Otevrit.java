@@ -1,15 +1,23 @@
 package prikazy;
 
-public class Otevrit implements Prikaz {
+import mechanika.Hrac;
 
+public class Otevrit implements Prikaz {
+    Hrac h;
 
     @Override
     public String konej(String vstup) {
+        for (int i = 0; i <h.getInventar().size() ; i++) {
+            if (h.getInventar().get(i).getNazev().contains("kartakodchodu")){
+                ukonceni();
+            }
+        }
+
         return "";
     }
 
     @Override
     public boolean ukonceni() {
-        return false;//TODO
+        return true;//TODO
     }
 }
