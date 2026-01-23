@@ -6,7 +6,6 @@ import mechanika.Hrac;
 import java.util.Locale;
 
 public class Mluv implements Prikaz {
-    GameData g;
     Hrac h;
     @Override
     public String konej(String vstup) {
@@ -15,6 +14,10 @@ public class Mluv implements Prikaz {
                 return h.getAktualniMistnost().getPostavy().get(i).mluv();
             }
         }return "";
+    }
+
+    public Mluv(Hrac h) {
+        this.h = h;
     }
 
     @Override
