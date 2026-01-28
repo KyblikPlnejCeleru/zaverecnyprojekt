@@ -7,6 +7,7 @@ public class Postava {
     private Predmet vyzadovanyPredmet;
     private String[] dialog;
     private String popis;
+    private String rada;
 
     @Override
     public String toString() {
@@ -40,6 +41,14 @@ public class Postava {
 
     public void setDialog(String[] dialog) {
         this.dialog = dialog;
+    }
+
+    public String getRada() {
+        return rada;
+    }
+
+    public String getPopis() {
+        return popis;
     }
 
     public String mluv() {
