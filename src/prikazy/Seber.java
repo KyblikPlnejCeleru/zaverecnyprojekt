@@ -10,6 +10,7 @@ Hrac h;
         for (int i = 0; i < h.getAktualniMistnost().getPredmety().size(); i++) {
             if (h.getAktualniMistnost().getPredmety().get(i).getNazev().contains(vstup)){
                 h.pridatPredmet(h.getAktualniMistnost().getPredmety().get(i));
+                h.getAktualniMistnost().getPredmety().remove(h.getInventar().getLast());
             }
         }
         return "sebral jsi to";
