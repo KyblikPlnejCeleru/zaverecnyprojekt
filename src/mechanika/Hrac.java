@@ -8,6 +8,15 @@ public class Hrac {
     private int penize;
     private Mistnost aktualniMistnost;
 
+    @Override
+    public String toString() {
+        return "Hrac{" +
+                "inventar=" + inventar +
+                ", penize=" + penize +
+                ", aktualniMistnost=" + aktualniMistnost +
+                '}';
+    }
+
     public Hrac() {
         // TODO
     }
