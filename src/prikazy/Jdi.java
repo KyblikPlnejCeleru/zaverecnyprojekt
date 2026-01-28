@@ -20,6 +20,7 @@ public class Jdi implements Prikaz {
                 if (hrac.getAktualniMistnost().getVstupy().contains(hra.getLocations().get(i).getId())) {
                     hrac.setAktualniMistnost(hra.getLocations().get(i));
                     System.out.println("Aktualni mistnost " + hrac.getAktualniMistnost());
+                    hrac.getAktualniMistnost().getPostavy();
                 }
             }
         }

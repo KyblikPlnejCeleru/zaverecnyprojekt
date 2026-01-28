@@ -9,10 +9,9 @@ public class Mluv implements Prikaz {
     Hrac h;
     @Override
     public String konej(String vstup) {
-            if (h.getAktualniMistnost().getPostavy().equals(vstup.toLowerCase().trim())){
+            if (h.getAktualniMistnost().getPostavy()!=null&&h.getAktualniMistnost().getPostavy().getJmeno().toLowerCase().trim().equals(vstup.toLowerCase().trim())){
                 return h.getAktualniMistnost().getPostavy().mluv();
-
-        }return "";
+        }return "NENI MOZNY";
     }
 
     public Mluv(Hrac h) {
