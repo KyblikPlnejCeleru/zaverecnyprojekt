@@ -9,14 +9,13 @@ Hrac h;
     public String konej(String vstup) {
         for (int i = 0; i < h.getInventar().size(); i++) {
             if (h.getInventar().get(i).getNazev().equalsIgnoreCase(vstup)){
-                for (int j = 0; j < h.getAktualniMistnost().getPostavy().size(); j++) {
-                if(h.getInventar().get(i).equals(h.getAktualniMistnost().getPostavy().get(i).getVyzadovanyPredmet())) {
+                if(h.getInventar().get(i).equals(h.getAktualniMistnost().getPostavy().getVyzadovanyPredmet())) {
                     h.odeberPredmet(h.getInventar().get(i));
                     return "jaj pekny";
                 }
                 }
             }
-        }
+
         return "";
     }
     public Pouzij(Hrac h) {
