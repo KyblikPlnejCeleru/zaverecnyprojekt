@@ -9,6 +9,11 @@ public class InventarPrikaz implements Prikaz {
 
     @Override
     public String konej(String vstup) {
+        if (h.getInventar()==null){
+            return "nic nemas";
+        } else if (h.getInventar().size()==0) {
+            return "nic nemas";
+        }
         return h.vypisInventar();
     }
 
