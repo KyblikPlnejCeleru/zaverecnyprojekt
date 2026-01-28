@@ -9,7 +9,7 @@ public class Mistnost {
     private int id;
     private ArrayList<Integer> vstupy;
     private ArrayList<Predmet> predmety;
-    private ArrayList<Postava> postavy;
+    private Postava postava;
 
     public Mistnost(String nazev, String popis) {
         // TODO
@@ -61,12 +61,12 @@ public class Mistnost {
         this.predmety = predmety;
     }
 
-    public ArrayList<Postava> getPostavy() {
-        return postavy;
+    public Postava getPostavy() {
+        return postava;
     }
 
-    public void setPostavy(ArrayList<Postava> postavy) {
-        this.postavy = postavy;
+    public void setPostavy(Postava postavy) {
+        this.postava = postavy;
     }
 
     public int getId() {
@@ -85,7 +85,7 @@ public class Mistnost {
                 ", id=" + id +
                 ", vstupy=" + vstupy +
                 ", predmety=" + predmety +
-                ", postavy=" + postavy +
+                ", postavy=" + postava +
                 '}';
     }
 }
