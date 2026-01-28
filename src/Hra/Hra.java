@@ -20,7 +20,7 @@ public class Hra {
         k.inicializatorPrikazu(data, h);
         do {
             k.execute();
-        }while (!konec);
+        }while (!k.getPrikazy().get("otevrit").ukonceni());
         // TODO dodelat konec smycky
     }
 
