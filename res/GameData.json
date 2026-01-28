@@ -3,58 +3,144 @@
     {
       "id": 1,
       "nazev": "chodba",
-      "popis": "Dlouha chodba s linoleem a sedymi stenami.",
-      "vstupy": [2, 3, 4, 5, 6, 7, 8,9],
+      "popis": "Dlouha chodba s linoleem a sedymi stenami. Na zdech visi vykresy studentu.",
+      "vstupy": [2, 3, 4, 5, 6, 7, 8, 9],
       "predmety": [],
-      "postavy": []
+      "postava": null
     },
     {
       "id": 2,
       "nazev": "ucebnait",
       "popis": "Mistnost plna pocitacu. Vzduch je citit prachem a elektrinou.",
       "vstupy": [1],
-      "predmety": [],
-      "postavy": []
+      "predmety": [{
+        "id": 1,
+        "nazev": "karta",
+        "popis": "Plastova karta s magnetickym prouzkem. Mozna se hodi k necemu zamcenemu."
+      },
+        {
+          "id": 3,
+          "nazev": "papirek",
+          "popis": "Zmacmany papirek s napisem 'Heslo: admin123'."
+        }],
+      "postava": {
+        "id": 3,
+        "jmeno": "ucitelit",
+        "popis": "Mlady ucitel v tricku s potiskem. Stale neco pise na klavesnici.",
+        "vyzadovanyPredmet": {
+          "id": 4,
+          "nazev": "sroubovak",
+          "popis": "Krizovy sroubovak. Hodi se na utahovani sroubu."
+        },
+        "dialog": ["Ahoj, co potrebujes?", "Potrebuji sroubovak, abych mohl otevrit tu skrinu s routerem.", "Muj sroubovak se mi nekde ztratil.", "Pokud mi ho prineses, dam ti neco, co by se ti mohlo hodit."]
+      }
     },
     {
       "id": 3,
       "nazev": "ucebnaelektro",
-      "popis": "Ucebna plne elektrotechnickych soucastek a mericich pristroju.",
+      "popis": "Ucebna plna elektrotechnickych soucastek a mericich pristroju.",
       "vstupy": [1],
-      "predmety": [],
-      "postavy": []
+      "predmety": [{
+        "id": 4,
+        "nazev": "sroubovak",
+        "popis": "Krizovy sroubovak. Hodi se na utahovani sroubu."
+      }],
+      "postava": {
+        "id": 4,
+        "jmeno": "ucitelelektro",
+        "popis": "Ucitel v bilem plastu, drzi multimetr.",
+        "vyzadovanyPredmet":  {
+          "id": 1,
+          "nazev": "karta",
+          "popis": "Plastova karta s magnetickym prouzkem. Mozna se hodi k necemu zamcenemu."
+        },
+        "dialog": ["Hej studente, nevis, kde je karta k trezoru?", "Potrebuji ji, abych mohl vybrat nejake soucastky.", "Pokud mi ji prineses, mozna ti dam neco na oplatku."]
+      }
     },
     {
       "id": 4,
       "nazev": "laborator",
       "popis": "Laborator s chemickymi soupravami a mikroskopy. V rohu stoji umyvadlo.",
       "vstupy": [1],
-      "predmety": [],
-      "postavy": []
+      "predmety": [
+        {
+          "id": 5,
+          "nazev": "lahvicka",
+          "popis": "Mala lahvicka s neznamou tekutinou. Asi nejaky chemicky roztok."
+        }],
+      "postava":
+      {"id": 5,
+      "jmeno": "ucitelchemie",
+      "popis": "Ucitel v bilem plaste a s brylemi. Stoj u tabule s rovnicemi.",
+      "vyzadovanyPredmet":  {
+        "id": 3,
+        "nazev": "papirek",
+        "popis": "Zmacmany papirek s napisem 'Heslo: admin123'."
+      },
+      "dialog": ["Dobry den, nevite, kde je papirek s heslem?", "Potrebuji ho k otevreni trezoru s chemikalii.", "Pokud mi ho prinesete, dam vam neco zajimaveho."]
+    }
     },
     {
       "id": 5,
       "nazev": "kabinet",
-      "popis": "Kabinet ucitelu, preplneni skrinemi s dokumenty.",
+      "popis": "Kabinet ucitelu, preplneny skrinemi s dokumenty. Na stole stoji kavovar.",
       "vstupy": [1, 6],
-      "predmety": [],
-      "postavy": []
+      "predmety": [{
+          "id": 2,
+          "nazev": "klic",
+          "popis": "Stribrny klic na starodavnem krouzku. Vypada jako klic od hlavniho vchodu."
+      },
+        {
+        "id": 6,
+        "nazev": "kafe",
+        "popis": "Salek vychladle kafe. Uz neni teple, ale porad voni."
+      }
+      ],
+      "postava": {
+        "id": 1,
+        "jmeno": "skolnik",
+        "popis": "Starsi muz v modrem overallu. Vypada unavene, ale vi toho hodne o skole.",
+        "vyzadovanyPredmet": {
+          "id": 5,
+          "nazev": "lahvicka",
+          "popis": "Mala lahvicka s neznamou tekutinou. Asi nejaky chemicky roztok."
+        },
+        "dialog": ["Ahoj, co tady jeste delas?", "Skola je uz davno zavrena.", "Pokud se chces dostat ven, potrebujes klic od hlavnich dveri.", "Ja ho mam, ale nejdriv mi musis pomoct.", "Ucitel chemie v laboratori mi vzal mou lahvicku.", "Prines mi ji zpatky a dam ti klic."]
+      }
     },
     {
       "id": 6,
       "nazev": "sborovna",
-      "popis": "Klidne mistnost s pohodlnymi kresly a dlouhym stolem.",
+      "popis": "Klidna mistnost s pohodlnymi kresly a dlouhym stolem.",
       "vstupy": [5],
-      "predmety": [],
-      "postavy": []
+      "predmety": [{
+        "id": 7,
+        "nazev": "rozvrh",
+        "popis": "Rozvrh hodin na pristi tyden. Nektere predmety jsou preskrtnute."
+      }],
+      "postava": {
+        "id": 2,
+        "jmeno": "ucitelmatematiky",
+        "popis": "Ucitel v sede saku. Sedi za stolem a prohlizi si seznamy.",
+        "vyzadovanyPredmet": {
+          "id": 6,
+          "nazev": "kafe",
+          "popis": "Salek vychladle kafe. Uz neni teple, ale porad voni."
+        },
+        "dialog": ["Dobry den, studente.", "Nevite, kde mam kafe?", "Potrebuji ho, abych mohl opravovat testy.", "Pokud mi ho prinesete, dam vam neco uzitecneho."]
+      }
     },
     {
       "id": 7,
       "nazev": "satna",
-      "popis": "Satna s radami skr�nek. Na zemi lezi ponozky a boty.",
+      "popis": "Satna s radami skrinek. Na zemi lezi ponozky a boty.",
       "vstupy": [1],
-      "predmety": [],
-      "postavy": []
+      "predmety": [{
+        "id": 8,
+        "nazev": "baterka",
+        "popis": "Mala baterka. Je jeste funkcni, ale blika."
+      }],
+      "postava": null
     },
     {
       "id": 8,
@@ -62,15 +148,19 @@
       "popis": "Masivni dvere vedouci ven ze skoly. Jsou zamceny na nekolik zamku.",
       "vstupy": [1],
       "predmety": [],
-      "postavy": []
+      "postava": null
     },
     {
       "id": 9,
       "nazev": "bufet",
       "popis": "Nejvic masivne dobrej bufet na svete.",
       "vstupy": [1],
-      "predmety": [],
-      "postavy": []
+      "predmety": [{
+        "id": 9,
+        "nazev": "Bagetka",
+        "popis": "Nejlepsi bagetka na svete, gyros."
+      }],
+      "postava": null
     }
   ]
 }
