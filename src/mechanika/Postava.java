@@ -4,6 +4,7 @@ public class Postava {
     private String jmeno;
     private Predmet vyzadovanyPredmet;
     private String[] dialog;
+    private String popis;
 
     public String getJmeno() {
         return jmeno;
