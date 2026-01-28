@@ -11,7 +11,7 @@ public class InventarPrikaz implements Prikaz {
     public String konej(String vstup) {
         if (h.getInventar()==null){
             return "nic nemas";
-        } else if (h.getInventar().size()==0) {
+        } else if (h.getInventar().isEmpty()) {
             return "nic nemas";
         }
         return h.vypisInventar();
