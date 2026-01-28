@@ -1,10 +1,22 @@
 package mechanika;
 
+import java.util.Arrays;
+
 public class Postava {
     private String jmeno;
     private Predmet vyzadovanyPredmet;
     private String[] dialog;
     private String popis;
+
+    @Override
+    public String toString() {
+        return "Postava{" +
+                "jmeno='" + jmeno + '\'' +
+                ", vyzadovanyPredmet=" + vyzadovanyPredmet +
+                ", dialog=" + Arrays.toString(dialog) +
+                ", popis='" + popis + '\'' +
+                '}';
+    }
 
     public String getJmeno() {
         return jmeno;
@@ -31,6 +43,16 @@ public class Postava {
     }
 
     public String mluv() {
+        for (int i = 0; i < dialog.length; i++) {
+
+            try{
+                System.out.println(i);
+                Thread.sleep(100);
+                System.out.println(dialog[i]);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        }
 
         return "";
     }

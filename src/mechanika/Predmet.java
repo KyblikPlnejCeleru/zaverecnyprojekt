@@ -5,6 +5,14 @@ public class Predmet {
     private String nazev;
     private String popis;
 
+    @Override
+    public String toString() {
+        return "Predmet{" +
+                "id=" + id +
+                ", nazev='" + nazev + '\'' +
+                ", popis='" + popis + '\'' +
+                '}';
+    }
 
     public String getNazev() {
         return nazev;
