@@ -11,23 +11,7 @@ public class Mistnost {
     private ArrayList<Predmet> predmety;
     private Postava postava;
 
-    public Mistnost(String nazev, String popis) {
-        // TODO
-    }
 
-    public void pridejVychod(Mistnost soused) {
-        // TODO
-    }
-
-    public String getDlouhyPopis() {
-        // TODO
-        return "";
-    }
-
-    public Predmet seberPredmet(String nazev) {
-        // TODO
-        return null;
-    }
 
     public String getNazev() {
         return nazev;
