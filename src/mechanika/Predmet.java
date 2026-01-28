@@ -1,8 +1,9 @@
 package mechanika;
 
 public class Predmet {
-    private String nazev;
     private int id;
+    private String nazev;
+    private String popis;
 
 
     public String getNazev() {
