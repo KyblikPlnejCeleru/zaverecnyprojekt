@@ -15,7 +15,7 @@
       "vstupy": [1],
       "predmety": [{
         "id": 1,
-        "nazev": "karta",
+        "nazev": "kartakodchodu",
         "popis": "Plastova karta s magnetickym prouzkem. Mozna se hodi k necemu zamcenemu."
       },
         {
@@ -49,11 +49,6 @@
         "id": 4,
         "jmeno": "ucitelelektro",
         "popis": "Ucitel v bilem plastu, drzi multimetr.",
-        "vyzadovanyPredmet":  {
-          "id": 1,
-          "nazev": "karta",
-          "popis": "Plastova karta s magnetickym prouzkem. Mozna se hodi k necemu zamcenemu."
-        },
         "dialog": ["Hej studente, nevis, kde je karta k trezoru?", "Potrebuji ji, abych mohl vybrat nejake soucastky.", "Pokud mi ji prineses, mozna ti dam neco na oplatku."]
       }
     },
