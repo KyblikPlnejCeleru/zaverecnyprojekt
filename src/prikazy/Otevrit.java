@@ -16,6 +16,10 @@ public class Otevrit implements Prikaz {
         return "";
     }
 
+    public Otevrit(Hrac h) {
+        this.h = h;
+    }
+
     @Override
     public boolean ukonceni() {
         return true;//TODO
