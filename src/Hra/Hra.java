@@ -15,6 +15,7 @@ public class Hra {
         GameData data = GameData.loadGameDataFromResources("res/GameData.json");
         Konzole k = new Konzole();
         Hrac h = new Hrac();
+        h.setInventar();
         h.setAktualniMistnost(data.getLocations().getFirst());
         k.inicializatorPrikazu(data, h);
         do {
