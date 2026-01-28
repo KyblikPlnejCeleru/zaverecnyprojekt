@@ -1,8 +1,7 @@
 package Hra;
 
 import mechanika.Hrac;
-import prikazy.Jdi;
-import prikazy.Prikaz;
+import prikazy.*;
 
 import java.util.HashMap;
 import java.util.Scanner;
@@ -29,6 +28,11 @@ public class Konzole {
      */
     public void inicializatorPrikazu(GameData g, Hrac h) {
         prikazy.put("jdi", new Jdi(g, h));
+        prikazy.put("inventar", new InventarPrikaz(h));
+        prikazy.put("mluv", new Mluv(h));
+        prikazy.put("otevrit", new Otevrit(h));
+        prikazy.put("pouzij", new Pouzij(h));
+        prikazy.put("seber", new Seber(h));
 
     }
 
