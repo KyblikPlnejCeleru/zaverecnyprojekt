@@ -44,7 +44,14 @@ public class Konzole {
         String command = scanner.nextLine();
         String[] pr = command.trim().toLowerCase().split(" ");
         if (prikazy.containsKey(pr[0])) {
-            System.out.println(prikazy.get(pr[0]).konej(pr[1]));
+            switch (pr.length){
+                case 1:System.out.println(prikazy.get(pr[0]).konej("0"));
+                break;
+                case 2:System.out.println(prikazy.get(pr[0]).konej(pr[1]));
+                break;
+                default:
+                    System.out.println("o co se snazis musi to byt dlouhy 1,2. >]");
+            }
         }
 
     }
