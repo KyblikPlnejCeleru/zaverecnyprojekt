@@ -21,20 +21,11 @@ public class Hra {
         do {
             k.execute();
         }while (!k.getPrikazy().get("otevrit").ukonceni());
-        // TODO dodelat konec smycky
     }
 
-    private void vytvorSvet() {
-        // TODO
-    }
 
     public String vstup(String radek) {
         // TODO
         return "";
-    }
-
-    public boolean jeKonec() {
-        // TODO kontrola
-        return false;
     }
 }
