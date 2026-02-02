@@ -56,7 +56,7 @@ public class Postava {
 
             try{
                 System.out.println(i);
-                Thread.sleep(100);
+                Thread.sleep(1000);
                 System.out.println(dialog[i]);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
