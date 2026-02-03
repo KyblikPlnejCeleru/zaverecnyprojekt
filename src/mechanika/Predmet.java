@@ -14,6 +14,10 @@ public class Predmet {
                 '}';
     }
 
+    public String getPopis() {
+        return popis;
+    }
+
     public String getNazev() {
         return nazev;
     }
