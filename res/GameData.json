@@ -107,7 +107,7 @@
       "id": 6,
       "nazev": "sborovna",
       "popis": "Klidna mistnost s pohodlnymi kresly a dlouhym stolem.",
-      "vstupy": [5],
+      "vstupy": [1],
       "predmety": [{
         "id": 7,
         "nazev": "rozvrh",
