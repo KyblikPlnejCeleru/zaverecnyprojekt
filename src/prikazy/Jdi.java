@@ -3,6 +3,8 @@ package prikazy;
 import Hra.GameData;
 import mechanika.Hrac;
 
+import java.util.Arrays;
+
 public class Jdi implements Prikaz {
 
     private GameData hra;
@@ -19,12 +21,15 @@ public class Jdi implements Prikaz {
             if (hra.getLocations().get(i).getNazev().contains(vstup.toLowerCase().trim())) {
                 if (hrac.getAktualniMistnost().getVstupy().contains(hra.getLocations().get(i).getId())) {
                     hrac.setAktualniMistnost(hra.getLocations().get(i));
-                    System.out.println("Aktualni mistnost " + hrac.getAktualniMistnost());
-                    System.out.println(hrac.getAktualniMistnost().getPostavy().toString());
+                    return "Aktualni mistnost "+ hrac.getAktualniMistnost();
                 }
             }
         }
-        return "kouzlo";
+        String[] vs = new String[hrac.getAktualniMistnost().getVstupy().size()];
+        for (int i = 0; i <hrac.getAktualniMistnost().getVstupy().size() ; i++) {
+            vs[i]=hra.getLocations().get(i).getNazev();
+        };
+        return "bohuzel tam nelze jit, zkus tyhle mistnosti" + Arrays.toString(vs);
     }
 
     public Jdi(GameData hra, Hrac hrac) {
