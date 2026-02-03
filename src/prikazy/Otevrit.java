@@ -11,11 +11,11 @@ private boolean konec;
         for (int i = 0; i <h.getInventar().size() ; i++) {
             if (h.getInventar().get(i).getNazev().contains("kartakodchodu")) {
                 konec = true;
-                break;
+                return "dobra prace konec hry bageta je mozna odmena";
             }
         }
 
-        return "";
+        return "nemas kartu";
     }
 
     public Otevrit(Hrac h) {
