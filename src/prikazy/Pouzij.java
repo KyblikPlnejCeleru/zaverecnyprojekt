@@ -11,13 +11,11 @@ Hrac h;
             if (h.getInventar().get(i).getNazev().equalsIgnoreCase(vstup)){
                 if(h.getInventar().get(i).getNazev().equals(h.getAktualniMistnost().getPostavy().getVyzadovanyPredmet().getNazev())) {
                     h.odeberPredmet(h.getInventar().get(i));
-                    h.getAktualniMistnost().getPostavy().getRada();
-                    return "jaj pekny";
+                    return h.getAktualniMistnost().getPostavy().getRada();
                 }
                 }
             }
-
-        return "";
+        return "nemas to co chce ";
     }
     public Pouzij(Hrac h) {
         this.h = h;
