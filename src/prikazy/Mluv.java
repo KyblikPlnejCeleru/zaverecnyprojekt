@@ -11,7 +11,7 @@ public class Mluv implements Prikaz {
     public String konej(String vstup) {
             if (h.getAktualniMistnost().getPostavy()!=null&&h.getAktualniMistnost().getPostavy().getJmeno().toLowerCase().trim().equals(vstup.toLowerCase().trim())){
                 return h.getAktualniMistnost().getPostavy().mluv();
-        }return "NENI MOZNY";
+        }return "NENI MOZNY, zkus "+h.getAktualniMistnost().getPostavy().getJmeno();
     }
 
     public Mluv(Hrac h) {
