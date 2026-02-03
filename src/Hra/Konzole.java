@@ -45,7 +45,7 @@ public class Konzole {
         String[] pr = command.trim().toLowerCase().split(" ");
         if (prikazy.containsKey(pr[0])) {
             switch (pr.length){
-                case 1:System.out.println(prikazy.get(pr[0]).konej("0"));
+                case 1:System.out.println(prikazy.get(pr[0]).konej("--"));
                 break;
                 case 2:System.out.println(prikazy.get(pr[0]).konej(pr[1]));
                 break;
