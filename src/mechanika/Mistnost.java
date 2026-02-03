@@ -63,7 +63,7 @@ public class Mistnost {
 
     @Override
     public String toString() {
-        return "Mistnost{" +
+        return
                 "nazev='" + nazev + '\'' +
                 ", popis='" + popis + '\'' +
                 ", id=" + id +
