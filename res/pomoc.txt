@@ -1,0 +1,8 @@
+inventory - vypise predmety co momentalne mas v inventari
+jdi {mistnost} - pujde tam kam jsi napsal pokud tam muzes
+mluv {postava} - promluvis si s postavou (ona jen s tebou je to v bete)
+otevrit - ukonci hru pokud mas kartukodchodu
+pomoc - zkus hadat dvakrat
+pouzij {predmet} - tim das predmet postave pokud je ve stejne mistnosti a vlastnis to co chce
+seber {predmet} - sebere predmet ktery napises pokud se nachazi v mistnosti
+ukoncit - nezkusis nevis
