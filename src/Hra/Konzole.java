@@ -33,7 +33,7 @@ public class Konzole {
         prikazy.put("otevrit", new Otevrit(h));
         prikazy.put("pouzij", new Pouzij(h));
         prikazy.put("seber", new Seber(h));
-
+prikazy.put("ukoncit", new Ukoncit());
     }
 
     /**
@@ -53,6 +53,8 @@ public class Konzole {
                     System.out.println("o co se snazis musi to byt dlouhy 1,2. >]");
             }
         }
+
+
 
     }
 

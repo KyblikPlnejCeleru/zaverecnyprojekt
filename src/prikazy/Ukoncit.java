@@ -1,14 +1,10 @@
 package prikazy;
 
-
-public class Pomoc implements Prikaz{
-
-
-
-
+public class Ukoncit implements Prikaz{
     @Override
     public String konej(String vstup) {
-        return "";
+        ukonceni()=true;
+        return "konec hry bro";
     }
 
     @Override
