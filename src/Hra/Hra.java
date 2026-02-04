@@ -20,7 +20,7 @@ public class Hra {
         k.inicializatorPrikazu(data, h);
         do {
             k.execute();
-        }while (!k.getPrikazy().get("otevrit").ukonceni()^!k.getPrikazy().get("ukoncit").ukonceni());
+        }while (!k.getPrikazy().get("otevrit").ukonceni()&!k.getPrikazy().get("ukoncit").ukonceni());
     }
 
 
