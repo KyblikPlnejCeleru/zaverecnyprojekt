@@ -27,6 +27,7 @@
         "id": 3,
         "jmeno": "ucitelit",
         "popis": "Mlady ucitel v tricku s potiskem. Stale neco pise na klavesnici.",
+        "rada": "V tehle mistnosti je predmet ktery by ti pomohl odejit ze skoly.",
         "vyzadovanyPredmet": {
           "id": 4,
           "nazev": "sroubovak",
@@ -48,6 +49,7 @@
       "postava": {
         "id": 4,
         "jmeno": "ucitelelektro",
+        "rada": "Zkus jit treba do sborovny",
         "popis": "Ucitel v bilem plastu, drzi multimetr.",
         "dialog": ["Hej studente, nevis, kde je karta k trezoru?", "Potrebuji ji, abych mohl vybrat nejake soucastky.", "Pokud mi ji prineses, mozna ti dam neco na oplatku."]
       }
@@ -66,6 +68,7 @@
       "postava":
       {"id": 5,
       "jmeno": "ucitelchemie",
+        "rada": "hele tu to urcite nebude zkus ucebnu elektro",
       "popis": "Ucitel v bilem plaste a s brylemi. Stoj u tabule s rovnicemi.",
       "vyzadovanyPredmet":  {
         "id": 3,
@@ -94,6 +97,7 @@
       "postava": {
         "id": 1,
         "jmeno": "skolnik",
+        "rada": "neotravuj",
         "popis": "Starsi muz v modrem overallu. Vypada unavene, ale vi toho hodne o skole.",
         "vyzadovanyPredmet": {
           "id": 5,
@@ -116,6 +120,7 @@
       "postava": {
         "id": 2,
         "jmeno": "ucitelmatematiky",
+        "rada": "mozna ta ucebnait zni slibne",
         "popis": "Ucitel v sede saku. Sedi za stolem a prohlizi si seznamy.",
         "vyzadovanyPredmet": {
           "id": 6,
