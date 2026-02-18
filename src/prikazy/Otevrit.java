@@ -14,9 +14,9 @@ private boolean konec;
                 return "dobra prace konec hry bageta je mozna odmena";
             }
         }
-
         return "nemas kartu";
     }
+
 
     public Otevrit(Hrac h) {
         this.h = h;

@@ -18,7 +18,8 @@ public class Hrac {
     }
 
     public Hrac() {
-        // TODO
+        this.inventar = new ArrayList<>();
+        this.penize = 0;
     }
 
 

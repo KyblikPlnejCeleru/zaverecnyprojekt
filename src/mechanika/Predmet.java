@@ -5,6 +5,13 @@ public class Predmet {
     private String nazev;
     private String popis;
 
+    public Predmet() {
+    }
+
+    public Predmet(String nazev) {
+        this.nazev = nazev;
+    }
+
     @Override
     public String toString() {
         return "Predmet{" +

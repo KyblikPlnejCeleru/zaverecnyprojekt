@@ -47,8 +47,16 @@ public class Postava {
         return rada;
     }
 
+    public void setRada(String rada) {
+        this.rada = rada;
+    }
+
     public String getPopis() {
         return popis;
+    }
+
+    public void setPopis(String popis) {
+        this.popis = popis;
     }
 
     public String mluv() {
