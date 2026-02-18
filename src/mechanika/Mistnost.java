@@ -11,7 +11,14 @@ public class Mistnost {
     private ArrayList<Predmet> predmety;
     private Postava postava;
 
+    public Mistnost() {
+    }
 
+    public Mistnost(String nazev, int id, ArrayList<Integer> vstupy) {
+        this.nazev = nazev;
+        this.id = id;
+        this.vstupy = vstupy;
+    }
 
     public String getNazev() {
         return nazev;

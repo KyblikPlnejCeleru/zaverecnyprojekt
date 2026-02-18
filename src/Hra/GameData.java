@@ -22,6 +22,31 @@ import java.util.HashMap;
 public class GameData {
 
     public ArrayList<Predmet> Predmety;
+
+    public ArrayList<Predmet> getPredmety() {
+        return Predmety;
+    }
+
+    public void setPredmety(ArrayList<Predmet> predmety) {
+        Predmety = predmety;
+    }
+
+    public ArrayList<Mistnost> getMistnosti() {
+        return mistnosti;
+    }
+
+    public void setMistnosti(ArrayList<Mistnost> mistnosti) {
+        this.mistnosti = mistnosti;
+    }
+
+    public ArrayList<Postava> getPostavy() {
+        return postavy;
+    }
+
+    public void setPostavy(ArrayList<Postava> postavy) {
+        this.postavy = postavy;
+    }
+
     public ArrayList<Postava> postavy;
     private ArrayList<Mistnost> mistnosti;
 

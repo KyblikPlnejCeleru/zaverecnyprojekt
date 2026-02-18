@@ -10,6 +10,7 @@ public class Jdi implements Prikaz {
     private GameData hra;
     private Hrac hrac;
 
+
     @Override
 
 /**
