@@ -17,6 +17,7 @@ public class InventarPrikaz implements Prikaz {
         return h.vypisInventar();
     }
 
+
     public InventarPrikaz(Hrac h) {
         this.h = h;
     }
