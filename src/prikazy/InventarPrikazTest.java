@@ -8,10 +8,18 @@ import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * Test prikazu pro vypsani inventare
+ * @author romek studios
+ */
 class InventarPrikazTest {
 
 
     Hrac h = new Hrac();
+
+    /**
+     * Test prikazu pro vypsani inventare
+     */
     @Test
     void konej() {
         InventarPrikaz in = new InventarPrikaz(h);

@@ -1,5 +1,9 @@
 package mechanika;
 
+/**
+ * Trida co ma vsechny potrebne vlastnosti predmetu
+ * @author romek studios
+ */
 public class Predmet {
     private int id;
     private String nazev;

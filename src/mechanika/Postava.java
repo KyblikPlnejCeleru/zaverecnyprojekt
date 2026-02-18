@@ -2,6 +2,11 @@ package mechanika;
 
 import java.util.Arrays;
 
+/**
+ * Trida co ma vsechny potrebne vlastnosti postavy
+ * @author romek studios
+ */
+
 public class Postava {
     private String jmeno;
     private Predmet vyzadovanyPredmet;
@@ -28,7 +33,6 @@ public class Postava {
         return "Postava{" +
                 "jmeno='" + jmeno + '\'' +
                 ", vyzadovanyPredmet=" + vyzadovanyPredmet +
-                ", dialog=" + Arrays.toString(dialog) +
                 ", popis='" + popis + '\'' +
                 '}';
     }
@@ -65,6 +69,10 @@ public class Postava {
         return popis;
     }
 
+    /**
+     * Metoda co vraci dialog
+     * @return prazdnej return protoze tam mam thread sleep a bylo by to tezke udelat s tim
+     */
     public String mluv() {
         for (int i = 0; i < dialog.length; i++) {
 

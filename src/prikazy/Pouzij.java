@@ -3,8 +3,20 @@ package prikazy;
 import Hra.GameData;
 import mechanika.Hrac;
 
+/**
+ * Trida prikazu pro pouziti predmetu
+ * @author romek studios
+ */
 public class Pouzij implements Prikaz {
+
+
 Hrac h;
+
+    /**
+     * Prikaz pro pouziti predmetu
+     * @param vstup nazev predmetu
+     * @return bud-li napovedu nebo chybu
+     */
     @Override
     public String konej(String vstup) {
         for (int i = 0; i < h.getInventar().size(); i++) {
@@ -25,6 +37,6 @@ Hrac h;
 
     @Override
     public boolean ukonceni() {
-        return false;//TODO
+        return false;
     }
 }

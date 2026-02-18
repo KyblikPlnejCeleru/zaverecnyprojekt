@@ -5,8 +5,17 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
+/**
+ * Prikaz pro vypsani napovedy
+ * @author romek studios
+ */
 public class Pomoc implements Prikaz{
 
+    /**
+     * prikaz pro vypsani napovedy ktera je nacitana z txt
+     * @param vstup nemusi nic
+     * @return vraci napovedu jako string
+     */
     @Override
     public String konej(String vstup) {
         StringBuilder vystup = new StringBuilder();

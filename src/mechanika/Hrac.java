@@ -3,6 +3,12 @@ package mechanika;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+/**
+ *Trida ktera spravuje hrac, jeho aktualni mistnost,penize a inventar
+ * @author romek studios
+ *
+ */
+
 public class Hrac {
     private ArrayList<Predmet> inventar;
     private int penize;
@@ -23,18 +29,12 @@ public class Hrac {
     }
 
 
-    public void uberVec(String nazev) {
-        // TODO
-    }
 
     public String vypisInventar() {
         return inventar.toString();
     }
 
-    public boolean maKartu() {
-        // TODO
-        return false;
-    }
+
 
     public void setAktualniMistnost(Mistnost aktualniMistnost) {
         this.aktualniMistnost = aktualniMistnost;

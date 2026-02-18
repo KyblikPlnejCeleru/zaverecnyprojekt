@@ -8,6 +8,7 @@ import java.util.Scanner;
 
 /**
  * Trida pro spracovani prikazu
+ * @author romek studios
  */
 
 public class Konzole {

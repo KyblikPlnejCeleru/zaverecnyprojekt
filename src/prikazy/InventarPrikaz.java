@@ -3,9 +3,20 @@ package prikazy;
 import Hra.GameData;
 import mechanika.Hrac;
 
+/**
+ * Prikaz pro vypsani inventare
+ * @author romek studios
+ */
+
 public class InventarPrikaz implements Prikaz {
 
     private Hrac h;
+
+    /**
+     * Prikay pro vypsani inventare
+     * @param vstup nemusi byt vubec nic
+     * @return vypise inventar
+     */
 
     @Override
     public String konej(String vstup) {

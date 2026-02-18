@@ -2,9 +2,20 @@ package prikazy;
 
 import mechanika.Hrac;
 
+/**
+ * Trida pro prikaz ohledne sbirani predmetu ktere jsou v mistnosti
+ * @author romek studios
+ */
+
 public class Seber implements Prikaz {
 
 Hrac h;
+
+    /**
+     * Prikaz ohledne sbirani predmetu ktere jsou v mistnosti
+     * @param vstup nazev predmetu co chci sebrat
+     * @return vraci text nebo chybu
+     */
     @Override
     public String konej(String vstup) {
         for (int i = 0; i < h.getAktualniMistnost().getPredmety().size(); i++) {

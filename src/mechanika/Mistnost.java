@@ -3,6 +3,11 @@ package mechanika;
 
 import java.util.ArrayList;
 
+/**
+ * Trida ktera ma vsechny potrebne vlastnosti mistnosti
+ * @author romek studios
+ *
+ */
 public class Mistnost {
     private String nazev;
     private String popis;

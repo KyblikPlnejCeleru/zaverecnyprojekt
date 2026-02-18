@@ -8,9 +8,17 @@ import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * Test prikazu pro chozeni mezi mistnostmi
+ * @author romek studios
+ */
 class JdiTest {
     Hrac h = new Hrac();
     GameData g = new GameData();
+
+    /**
+     * Test prikazu pro chozeni mezi mistnostmi
+     */
     @org.junit.jupiter.api.Test
     void konej() {
         Jdi j = new Jdi(g,h);
@@ -22,7 +30,9 @@ class JdiTest {
         assertEquals(g.getMistnosti().get(1).toString(),h.getAktualniMistnost().toString());
     }
 
-
+    /**
+     * Inicializace potrebnych dat
+     */
     public void inicializace(){
         ArrayList<Integer> jedna = new ArrayList<>();
         ArrayList<Integer> dva = new ArrayList<>();

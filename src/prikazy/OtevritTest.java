@@ -6,9 +6,17 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * Test pro prikaz ohledne dohrani hry
+ * @author romek studios
+ */
+
 class OtevritTest {
 
     @Test
+    /**
+     * Test pro prikaz ohledne dohrani hry
+     */
     void konej() {
         Hrac h = new Hrac();
         Otevrit ot = new Otevrit(h);

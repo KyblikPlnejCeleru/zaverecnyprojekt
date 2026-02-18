@@ -15,8 +15,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
- * Represents the game data loaded from a JSON file.
- * This class serves as a data container for all static game content, such as items, characters, locations, and quests.
+ *
+ * Thahle trida slouzi pro nacitani hernich dat z jsonu, napriklad postavy,predmety a celkova mapa.
  *
  */
 public class GameData {
@@ -51,10 +51,10 @@ public class GameData {
     private ArrayList<Mistnost> mistnosti;
 
     /**
-     * Loads game data from a JSON file.
+     * nacita herni data z jsonu
      *
-     * @param resourcePath path to the resource file
-     * @return a GameData object filled with the loaded data
+     * @param resourcePath cesta k jsonu
+     * @return herni data z jsonu
      */
     public static GameData loadGameDataFromResources(String resourcePath) {
         //Vytvoření objektu pro práci s JSON souborem
@@ -75,20 +75,7 @@ public class GameData {
 
     }
 
-    /**
-     * Finds a specific location by its identifier.
-     *
-     * @param nazev the identifier of the location to be found
-     * @return the matching location
-     */
-    public Mistnost findLocation(String nazev) {
-        for (Mistnost l : mistnosti) {
-            if (l.getNazev().equals(nazev)) {
-                return l;
-            }
-        }
-        throw new IllegalArgumentException("Neexistuje lokace jmenem: " + nazev);
-    }
+
     public ArrayList<Mistnost> getLocations() {
         return mistnosti;
     }

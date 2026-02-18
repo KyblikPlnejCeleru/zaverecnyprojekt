@@ -5,6 +5,11 @@ import mechanika.Hrac;
 
 import java.util.Arrays;
 
+/**
+ * Trida prikazu pro chozeni mezi mistnostma
+ * @author romek studios
+ */
+
 public class Jdi implements Prikaz {
 
     private GameData hra;
@@ -14,7 +19,7 @@ public class Jdi implements Prikaz {
     @Override
 
 /**
- * prochazeni mezi mistnostma
+ * Prikaz pro prochazeni mezi mistnostma
  * @param vstup nazev mistnosti kam ten uzivatel chce jit
  */
     public String konej(String vstup) {

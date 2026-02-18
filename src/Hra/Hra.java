@@ -3,6 +3,11 @@ package Hra;
 import mechanika.Hrac;
 import prikazy.Jdi;
 
+/**
+ * Trida ktera slouzi pro spusteni hry
+ * @author romek studios
+ */
+
 public class Hra {
     private Hrac hrac;
     private boolean konec;
@@ -22,10 +27,4 @@ public class Hra {
         do {
             k.execute();
         }while (!k.getPrikazy().get("otevrit").ukonceni()&!k.getPrikazy().get("ukoncit").ukonceni());
-    }
-
-
-    public String vstup(String radek) {
-        return "";
-    }
-}
+    }  }
