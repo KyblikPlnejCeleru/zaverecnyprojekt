@@ -9,6 +9,20 @@ public class Postava {
     private String popis;
     private String rada;
 
+    public Postava(String jmeno, String rada, Predmet vyzadovanyPredmet) {
+        this.jmeno = jmeno;
+        this.rada = rada;
+        this.vyzadovanyPredmet = vyzadovanyPredmet;
+    }
+
+    public Postava() {
+    }
+
+    public Postava(String jmeno, String[] dialog) {
+        this.jmeno = jmeno;
+        this.dialog = dialog;
+    }
+
     @Override
     public String toString() {
         return "Postava{" +
@@ -47,16 +61,8 @@ public class Postava {
         return rada;
     }
 
-    public void setRada(String rada) {
-        this.rada = rada;
-    }
-
     public String getPopis() {
         return popis;
-    }
-
-    public void setPopis(String popis) {
-        this.popis = popis;
     }
 
     public String mluv() {
@@ -71,6 +77,6 @@ public class Postava {
             }
         }
 
-        return "";
+        return " ";
     }
 }

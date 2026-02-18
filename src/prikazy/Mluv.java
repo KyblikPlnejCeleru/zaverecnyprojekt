@@ -14,6 +14,7 @@ public class Mluv implements Prikaz {
         }return "NENI MOZNY, zkus "+h.getAktualniMistnost().getPostavy().getJmeno();
     }
 
+
     public Mluv(Hrac h) {
         this.h = h;
     }

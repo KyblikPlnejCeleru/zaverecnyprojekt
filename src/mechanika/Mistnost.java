@@ -14,6 +14,11 @@ public class Mistnost {
     public Mistnost() {
     }
 
+    public Mistnost(String nazev, Postava postava) {
+        this.nazev = nazev;
+        this.postava = postava;
+    }
+
     public Mistnost(String nazev, int id, ArrayList<Integer> vstupy) {
         this.nazev = nazev;
         this.id = id;
