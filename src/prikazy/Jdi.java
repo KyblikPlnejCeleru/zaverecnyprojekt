@@ -24,7 +24,7 @@ public class Jdi implements Prikaz {
  */
     public String konej(String vstup) {
         for (int i = 0; i < hra.getLocations().size(); i++) {
-            if (hra.getLocations().get(i).getNazev().contains(vstup.toLowerCase().trim())) {
+            if (hra.getLocations().get(i).getNazev().equalsIgnoreCase(vstup)) {
                 if (hrac.getAktualniMistnost().getVstupy().contains(hra.getLocations().get(i).getId())) {
                     hrac.setAktualniMistnost(hra.getLocations().get(i));
                     return "Aktualni mistnost "+ hrac.getAktualniMistnost();
