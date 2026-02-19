@@ -33,7 +33,7 @@ public class Konzole {
         prikazy.put("mluv", new Mluv(h));
         prikazy.put("otevrit", new Otevrit(h));
         prikazy.put("pouzij", new Pouzij(h));
-        prikazy.put("seber", new Seber(h));
+        prikazy.put("seber", new Seber(h,g));
 prikazy.put("ukoncit", new Ukoncit());
 prikazy.put("pomoc", new Pomoc());
     }

@@ -28,6 +28,10 @@ public class Hrac {
         this.penize = 0;
     }
 
+    public void pridatPrachy(){
+        penize+=10;
+    }
+
 
 
     public String vypisInventar() {

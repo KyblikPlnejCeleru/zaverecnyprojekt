@@ -23,7 +23,8 @@ Hrac h;
             if (h.getInventar().get(i).getNazev().equalsIgnoreCase(vstup)){
                 if(h.getInventar().get(i).getNazev().equals(h.getAktualniMistnost().getPostavy().getVyzadovanyPredmet().getNazev())) {
                     h.odeberPredmet(h.getInventar().get(i));
-                    return h.getAktualniMistnost().getPostavy().getRada();
+                    h.pridatPrachy();
+                    return h.getAktualniMistnost().getPostavy().getRada()+" dostal jsi 10kc.";
                 }
                 }
             }
