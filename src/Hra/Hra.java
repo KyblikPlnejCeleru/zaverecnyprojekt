@@ -18,7 +18,8 @@ public class Hra {
      */
     public void spusti() {
         GameData data = GameData.loadGameDataFromResources("res/GameData.json");
-        System.out.println("ses student na skole spse jecna co tam je pozde a musis odejit napis pomoc pro pomoc");
+        ZacatecniDialog d = new ZacatecniDialog();
+        System.out.println(d.dialog());;
         Konzole k = new Konzole();
         Hrac h = new Hrac();
         h.setInventar();
