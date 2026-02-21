@@ -1,8 +1,9 @@
-package prikazy;
+package Tests;
 
 import Hra.GameData;
 import mechanika.Hrac;
 import mechanika.Mistnost;
+import prikazy.Jdi;
 
 import java.util.ArrayList;
 

@@ -1,6 +1,7 @@
-package prikazy;
+package Tests;
 
 import org.junit.jupiter.api.Test;
+import prikazy.Ukoncit;
 
 import static org.junit.jupiter.api.Assertions.*;
 

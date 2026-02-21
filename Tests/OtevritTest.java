@@ -1,8 +1,9 @@
-package prikazy;
+package Tests;
 
 import mechanika.Hrac;
 import mechanika.Predmet;
 import org.junit.jupiter.api.Test;
+import prikazy.Otevrit;
 
 import static org.junit.jupiter.api.Assertions.*;
 

@@ -1,10 +1,11 @@
-package prikazy;
+package Tests;
 
 import mechanika.Hrac;
 import mechanika.Mistnost;
 import mechanika.Postava;
 import mechanika.Predmet;
 import org.junit.jupiter.api.Test;
+import prikazy.Pouzij;
 
 import static org.junit.jupiter.api.Assertions.*;
 

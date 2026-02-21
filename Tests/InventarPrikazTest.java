@@ -1,10 +1,9 @@
-package prikazy;
+package Tests;
 
 import mechanika.Hrac;
 import mechanika.Predmet;
 import org.junit.jupiter.api.Test;
-
-import java.util.Arrays;
+import prikazy.InventarPrikaz;
 
 import static org.junit.jupiter.api.Assertions.*;
 
