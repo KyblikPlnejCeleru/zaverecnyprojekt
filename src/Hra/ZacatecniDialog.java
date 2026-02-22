@@ -1,25 +1,24 @@
 package Hra;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 
 /**
  * Trida ktera slouzi pro nacitani a zpracovani zacatecniho dialogu >]
- * @author romek studios
+ * @author romek studios + matej pospisil
  */
-
 public class ZacatecniDialog {
-
     /**
      * Metoda pro nacteni a vypsani toho dialogu z textoveho souboru kterej je typu .txt {to uz je funfact}
      * @return vraci ten dialog bro
      */
     public String dialog() {
         StringBuilder vystup = new StringBuilder();
-        try (BufferedReader br = new BufferedReader(new FileReader("res/dialog.txt"))) {
+        InputStream stream = ZacatecniDialog.class.getResourceAsStream("/dialog.txt");
+        if (stream == null) {
+            return "Jestli toto vidis tak jsem to pokazil co kdyztak kontaktujte email potocek{zavinac}spsejecna.cz";
+        }
+        try (BufferedReader br = new BufferedReader(new InputStreamReader(stream))) {
             String radek;
             while ((radek = br.readLine()) != null) {
                 vystup.append(radek).append("\n");
