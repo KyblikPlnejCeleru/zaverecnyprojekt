@@ -30,11 +30,9 @@ public class Postava {
 
     @Override
     public String toString() {
-        return "Postava{" +
-                "jmeno='" + jmeno + '\'' +
-                ", vyzadovanyPredmet=" + vyzadovanyPredmet +
-                ", popis='" + popis + '\'' +
-                '}';
+        return jmeno + '\'' +
+                popis + '\'' +
+                ", vyzaduje:" + vyzadovanyPredmet ;
     }
 
     public String getJmeno() {

@@ -18,11 +18,8 @@ public class Predmet {
 
     @Override
     public String toString() {
-        return "Predmet{" +
-                "id=" + id +
-                ", nazev='" + nazev + '\'' +
-                ", popis='" + popis + '\'' +
-                '}';
+        return "nazev:" + nazev + '\'' +
+                "popis:" + popis + "\n";
     }
 
     public String getPopis() {

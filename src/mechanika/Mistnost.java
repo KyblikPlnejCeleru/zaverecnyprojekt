@@ -81,13 +81,10 @@ public class Mistnost {
     @Override
     public String toString() {
         return
-                "nazev='" + nazev + '\'' +
-                ", popis='" + popis + '\'' +
-                ", id=" + id +
-                ", vstupy=" + vstupy +
-                ", predmety=" + predmety +
-                ", postavy=" + postava +
-                '}';
+                nazev  +
+                "popis:" + popis + "\n" +
+                "postavy:" + postava+ "\n"+
+                "na zemi je:" + predmety.toString();
     }
 }
 
