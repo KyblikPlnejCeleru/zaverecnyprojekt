@@ -53,4 +53,4 @@ Java 21
 
 Funkční terminál
 
-Do terminalu napiste cd out\artifacts\untitled3_jar> a pote napište java -jar untitled3.jar
+V terminálu přejděte do složky kde to máte uložené pomocí cd (lokace) a pak tam napište Java -jar untitled3.jar
